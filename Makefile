@@ -21,7 +21,7 @@ OBJS=webdis.o cmd.o worker.o slog.o server.o libb64/cencode.o acl.o md5/md5.o sh
 
 
 
-PREFIX ?= /usr/local
+PREFIX ?= /usr
 CONFDIR ?= $(DESTDIR)/etc
 
 INSTALL_DIRS = $(DESTDIR) \
@@ -48,4 +48,4 @@ clean:
 
 install: $(OUT) $(INSTALL_DIRS)
 	cp $(OUT) $(DESTDIR)/$(PREFIX)/bin
-	cp webdis.prod.json $(CONFDIR)
+	cp webdis.prod.json $(CONFDIR)/webdis.json
