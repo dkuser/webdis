@@ -1,0 +1,6 @@
+Package: webdis
+Depends: libevent
+Homepage: http://webd.is
+Section: web
+Description: A fast HTTP interface for Redis
+ A fast HTTP interface for Redis, based on Libevent. Can return Redis objects in arrays, TXT, JSON and HTML.
